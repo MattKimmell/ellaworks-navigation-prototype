@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ellaworks · Navigation proposal</title>
+<title>Ellaworks · Navigation summary v2</title>
 <style>
 *{box-sizing:border-box}body{margin:0;background:#f4f4f4;color:#1a1a1a;font:14px/1.45 Arial,Helvetica,sans-serif}main{max-width:1160px;margin:28px auto;padding:34px 40px;background:#fff}header{border-bottom:2px solid #111;padding-bottom:23px;margin-bottom:26px}.wordmark{font-weight:800;font-size:13px;letter-spacing:1.8px;margin-bottom:13px}h1{font-size:34px;line-height:1.15;letter-spacing:-.8px;margin:0 0 9px}h2{font-size:20px;line-height:1.3;margin:0 0 17px;letter-spacing:-.3px}h3{font-size:14px;margin:0 0 9px}p{margin:0}header p,.muted{color:#666}.actions{display:flex;gap:18px;align-items:center;margin-top:18px;font-size:13px}a{color:#111;text-decoration:underline;text-underline-offset:3px}button{font:inherit;cursor:pointer;color:#111;background:#fff;border:1px solid #555;padding:7px 12px}a:focus-visible,button:focus-visible{outline:2px solid #111;outline-offset:4px}section{margin-top:28px}.areas{display:grid;grid-template-columns:2fr 1fr;gap:20px}.area{border:1px solid #d4d4d4;min-width:0}.area>h3{background:#111;color:#fff;font-size:15px;margin:0;padding:12px 16px}.area-body{padding:16px}.primary-destination{font-weight:700;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid #ddd}.groups{display:grid;grid-template-columns:1fr 1fr;gap:19px 28px}.groups h4{font-size:13px;margin:0 0 5px}.groups ul,.library-list{list-style:none;margin:0;padding:0 0 0 11px;border-left:1px solid #aaa}.groups li,.library-list li{padding:2px 0}.library-list li{padding:5px 0}.global{margin-top:12px;padding:11px 14px;background:#f3f3f3;font-size:12px;line-height:1.6}.global strong{color:#111}.contexts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;border-bottom:1px solid #ddd;padding:17px 0}.contexts h3{font-size:12px;margin-bottom:6px}.contexts p{font-size:12px;line-height:1.65;color:#555}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px;text-align:left;table-layout:fixed}th{background:#111;color:#fff;font-size:12px;padding:10px 13px;font-weight:700}td{padding:11px 13px;vertical-align:top;border-bottom:1px solid #ddd;overflow-wrap:anywhere}tbody tr:nth-child(even){background:#f3f3f3}td small{display:block;color:#666;font-size:11px;line-height:1.5;margin-top:4px}.names th:first-child{width:27%}.changes th:first-child{width:26%}.changes th:nth-child(2){width:17%}.changes td:nth-child(2){font-size:12px;font-weight:700}.note{font-size:12px;color:#666;line-height:1.55;margin-top:12px}footer{margin-top:25px;border-top:1px solid #111;padding-top:11px;font-size:11px;color:#666}.offsite .local-only{display:none}.offsite .actions{margin-top:12px}
 @media(max-width:760px){main{margin:0;padding:25px 20px}h1{font-size:29px}.areas{grid-template-columns:1fr}.contexts{grid-template-columns:1fr 1fr}.names th:first-child{width:34%}.changes th:first-child{width:30%}.changes th:nth-child(2){width:23%}td,th{padding:10px 9px}.actions{flex-wrap:wrap;gap:14px}}
@@ -15,56 +15,58 @@
 <main>
 <header>
 <div class="wordmark">ELLAVOX</div>
-<h1>Ellaworks navigation proposal</h1>
-<p>October 20, 2026</p>
-<div class="actions"><a class="local-only" href="./#work/teams">Open prototype</a><a class="local-only" href="./ellaworks-navigation-review.html" download="ellaworks-navigation-review.html">Download shareable HTML</a><button type="button" onclick="window.print()">Print / save as PDF</button></div>
+<h1>Ellaworks navigation summary · v2</h1>
+<p>October 21, 2026</p>
+<div class="actions"><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/v2/#work/agents">Open prototype v2</a><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/">Compare with v1</a><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/ellaworks-navigation-review.html" download="ellaworks-navigation-review.html">Download shareable HTML</a><button type="button" onclick="window.print()">Print / save as PDF</button></div>
 </header>
 <section aria-labelledby="structure">
 <h2 id="structure">1. Proposed structure</h2>
 <div class="areas">
 <div class="area"><h3>Work area: Agents &amp; Teams</h3><div class="area-body">
-<div class="primary-destination">Workers &amp; teams</div>
 <div class="groups">
-<div><h4>Provider management</h4><ul><li>Agents</li><li>Groups</li><li>Deployments</li></ul></div>
-<div><h4>Testing</h4><ul><li>Playground</li><li>Judge Studio</li></ul></div>
-<div><h4>Monitoring</h4><ul><li>Statistics</li><li>Logs</li></ul></div>
-<div><h4>Configuration</h4><ul><li>Environments</li><li>Secrets</li><li>Variables</li><li>Guardrails</li></ul></div>
+<div><h4>Build</h4><ul><li><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/v2/#work/agents">Agents</a></li><li><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/v2/#work/teams">Teams</a></li></ul></div>
+<div><h4>Configuration</h4><ul><li>Environments</li><li>Secrets</li><li>Variables</li><li><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/v2/#work/guardrails">Guardrails</a></li></ul></div>
+<div><h4>Testing</h4><ul><li>Playground</li></ul></div>
+<div><h4>Monitoring</h4><ul><li>Logs</li><li>Usage</li><li>Deployment history</li></ul></div>
 </div></div></div>
-<div class="area"><h3>Work area: Library</h3><div class="area-body"><ul class="library-list"><li>Prompts</li><li>Promptlets</li><li>Knowledge bases</li><li>Tools</li><li>Registries</li><li>Prompt policies</li></ul></div></div>
+<div class="area"><h3>Work area: Library</h3><div class="area-body"><ul class="library-list"><li><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/v2/#library/prompts">Prompts</a></li><li>Promptlets</li><li>Knowledge bases</li><li>Tools</li><li>Registries</li><li>Prompt policies</li></ul></div></div>
 </div>
-<div class="global"><strong>Global navigation:</strong> organization chooser at top; Elladex above the bottom-left work-area switcher; account and organization settings at bottom. The switcher changes the sidebar between the two work areas.</div>
+<div class="global"><strong>How navigation works:</strong> the bottom-left switcher changes work area and sidebar. Sidebar headings stay visible; page tabs sit below the selected item’s title. Elladex stays above the switcher with “Discover and submit agents”; organization and account controls stay outside the page list.</div>
 <div class="contexts">
-<div><h3>Open a team</h3><p>Inbox · Task Board · Activity · Settings<br>Settings: Team settings, Policies, Exchange, Connections</p></div>
-<div><h3>Open a provider agent</h3><p>Overview · Tools · Knowledge · Deployment history</p></div>
-<div><h3>Open an agent group</h3><p>Agents first, then Shared settings: default configuration and group variables</p></div>
-<div><h3>Open a worker</h3><p>Overview · Knowledge · Activity · Settings<br>Individual worker workspace is a new view.</p></div>
+<div><h3>Ellaworks agent</h3><p>Overview · Knowledge · Activity · Settings<br>Job description, onboarding and source testing.</p></div>
+<div><h3>Provider-hosted agent</h3><p>Overview · Tools · Knowledge · Deployment history<br>Provider configuration and operational controls.</p></div>
+<div><h3>Team</h3><p>Inbox · Task Board · Activity · Settings<br>Settings: Team settings, Policies, Exchange, Connections.</p></div>
+<div><h3>Guardrails</h3><p>Rules · Design &amp; test<br>Judge Studio is brought into this workspace.</p></div>
 </div>
+<p class="note"><strong>One Agents directory, separate Teams:</strong> hosting badges, filters, tags and table/cards distinguish agents; Teams owns the mission-based team flow. Library remains separate, with a return path to the agent or team you were editing.</p>
 </section>
 <section aria-labelledby="names">
-<h2 id="names">2. Name changes</h2>
-<div class="table-wrap"><table class="names"><thead><tr><th>Existing site</th><th>Prototype</th></tr></thead><tbody>
-<tr><td>Agentic Teams</td><td><strong>Workers &amp; teams</strong><small>The directory also includes individual workers; this is an expanded view.</small></td></tr>
-<tr><td>Agents</td><td><strong>Agents</strong> in the sidebar · <strong>Provider agents</strong> as the page title</td></tr>
-<tr><td>Fleets</td><td><strong>Groups</strong> in the sidebar · <strong>Agent groups</strong> as the page title</td></tr>
-<tr><td>Deployments</td><td><strong>Deployments</strong> in the sidebar · <strong>Deployment history</strong> as the page title</td></tr>
+<h2 id="names">2. Names and placement</h2>
+<div class="table-wrap"><table class="names"><thead><tr><th>Existing site</th><th>V2 proposal</th></tr></thead><tbody>
+<tr><td>Agents</td><td><strong>Agents</strong> under Build; now includes Ellaworks and provider-hosted agents.<small>V1’s separate “worker” label and Provider management section are removed from the main navigation.</small></td></tr>
+<tr><td>Agentic Teams</td><td><strong>Teams</strong> under Build; separate from Agents.</td></tr>
+<tr><td>Fleets</td><td><strong>Shared group settings</strong>, reached from the Agents directory and assigned agent details.<small>No Groups sidebar item. Tags organize agents; they do not replace shared defaults or variables. Final disposition remains open.</small></td></tr>
 <tr><td>Observability</td><td><strong>Monitoring</strong></td></tr>
+<tr><td>Statistics</td><td><strong>Usage</strong> under Monitoring</td></tr>
+<tr><td>Deployments</td><td><strong>Deployment history</strong> under Monitoring</td></tr>
+<tr><td>Judge Studio</td><td><strong>Guardrails → Design &amp; test</strong>, under Configuration<small>Confirm that Judge Studio’s full scope fits this placement.</small></td></tr>
 <tr><td>Elladex Search</td><td><strong>Elladex</strong> · “Discover and submit agents”</td></tr>
 </tbody></table></div>
-<p class="note">Provider management, Testing, Configuration and the Library work area are new navigation groupings of existing pages.</p>
 </section>
 <section aria-labelledby="views">
 <h2 id="views">3. New and expanded views</h2>
 <div class="table-wrap"><table class="changes"><thead><tr><th>View</th><th>Change</th><th>Compared with the existing site</th></tr></thead><tbody>
-<tr><td><strong>Work-area navigation</strong></td><td>New interface</td><td>Bottom-left switcher, contextual sidebar and return to the originating view from Library.</td></tr>
-<tr><td><strong>Workers &amp; teams directory</strong></td><td>Expanded</td><td>Adds individual workers alongside the existing team list.</td></tr>
-<tr><td><strong>Add worker or team</strong></td><td>New screen</td><td>Choose Hire a worker or Create a team; the team branch retains the existing Create team form.</td></tr>
-<tr><td><strong>Hire a worker</strong></td><td>New flow</td><td>Conversation and editable job description → knowledge → onboarding clarification → review → answer-and-source testing → save.</td></tr>
-<tr><td><strong>Individual worker workspace</strong></td><td>New view</td><td>A focused place to review one worker’s job description, knowledge, readiness and settings.</td></tr>
+<tr><td><strong>Work-area navigation</strong></td><td>New interface</td><td>Two work areas, fixed sidebar headings, contextual page tabs and a return path from Library.</td></tr>
+<tr><td><strong>Agents directory</strong></td><td>Expanded</td><td>Combines hosting types, adds table/cards and tag management, and retains technical filters.</td></tr>
+<tr><td><strong>New agent</strong></td><td>New chooser</td><td>Create in Ellaworks or Create with a provider; Import agents is also available. Create team stays on Teams with the existing mission form.</td></tr>
+<tr><td><strong>Ellaworks onboarding</strong></td><td>New flow</td><td>Conversation + editable job description → connect knowledge → clarify conflicts → review for testing → answer-and-source testing → save. Start from a template, job description or existing agent.</td></tr>
+<tr><td><strong>Ellaworks agent detail</strong></td><td>New view</td><td>A focused workspace for the job description, knowledge, readiness, activity and settings.</td></tr>
+<tr><td><strong>Provider creation &amp; import</strong></td><td>Reworked flows</td><td>Create: Provider → Details → Configuration, with Visual/JSON, Library resources and searchable optional settings. Import: Provider → Environment → Select agents and prompt registry.<small>Based on the inspected Vapi flow. Create versus remote creation/deployment remains open for Talha; new examples save local drafts.</small></td></tr>
+<tr><td><strong>Guardrails workspace</strong></td><td>Combined view</td><td>Saved Rules and Design &amp; test share one workspace, with a simulated design conversation and editable rule preview.</td></tr>
 </tbody></table></div>
-<p class="note">New and expanded views are proposals for review.</p>
+<p class="note">These are review proposals using sample data. Agent identity, external-agent team participation, shared group settings and provider behavior still need engineering confirmation; details are in the prototype’s Review notes.</p>
 </section>
-<footer>Structure matches the current local prototype. Comparison is based on inspected app screens and the supplied product handoff; hidden and role-specific pages still need confirmation.</footer>
+<footer>Matches hosted prototype v2 as of October 21, 2026. Based on inspected live screens and the product handoff; this is not a production parity certification.</footer>
 </main>
-<script>if(location.protocol==='file:'){document.documentElement.classList.add('offsite')}</script>
 </body>
 </html>
