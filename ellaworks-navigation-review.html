@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ellaworks · Navigation proposal</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f4f4;color:#1a1a1a;font:14px/1.45 Arial,Helvetica,sans-serif}main{max-width:1160px;margin:28px auto;padding:34px 40px;background:#fff}header{border-bottom:2px solid #111;padding-bottom:23px;margin-bottom:26px}.wordmark{font-weight:800;font-size:13px;letter-spacing:1.8px;margin-bottom:13px}h1{font-size:34px;line-height:1.15;letter-spacing:-.8px;margin:0 0 9px}h2{font-size:20px;line-height:1.3;margin:0 0 17px;letter-spacing:-.3px}h3{font-size:14px;margin:0 0 9px}p{margin:0}header p,.muted{color:#666}.actions{display:flex;gap:18px;align-items:center;margin-top:18px;font-size:13px}a{color:#111;text-decoration:underline;text-underline-offset:3px}button{font:inherit;cursor:pointer;color:#111;background:#fff;border:1px solid #555;padding:7px 12px}a:focus-visible,button:focus-visible{outline:2px solid #111;outline-offset:4px}section{margin-top:28px}.areas{display:grid;grid-template-columns:2fr 1fr;gap:20px}.area{border:1px solid #d4d4d4;min-width:0}.area>h3{background:#111;color:#fff;font-size:15px;margin:0;padding:12px 16px}.area-body{padding:16px}.primary-destination{font-weight:700;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid #ddd}.groups{display:grid;grid-template-columns:1fr 1fr;gap:19px 28px}.groups h4{font-size:13px;margin:0 0 5px}.groups ul,.library-list{list-style:none;margin:0;padding:0 0 0 11px;border-left:1px solid #aaa}.groups li,.library-list li{padding:2px 0}.library-list li{padding:5px 0}.global{margin-top:12px;padding:11px 14px;background:#f3f3f3;font-size:12px;line-height:1.6}.global strong{color:#111}.contexts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;border-bottom:1px solid #ddd;padding:17px 0}.contexts h3{font-size:12px;margin-bottom:6px}.contexts p{font-size:12px;line-height:1.65;color:#555}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px;text-align:left;table-layout:fixed}th{background:#111;color:#fff;font-size:12px;padding:10px 13px;font-weight:700}td{padding:11px 13px;vertical-align:top;border-bottom:1px solid #ddd;overflow-wrap:anywhere}tbody tr:nth-child(even){background:#f3f3f3}td small{display:block;color:#666;font-size:11px;line-height:1.5;margin-top:4px}.names th:first-child{width:27%}.changes th:first-child{width:26%}.changes th:nth-child(2){width:17%}.changes td:nth-child(2){font-size:12px;font-weight:700}.note{font-size:12px;color:#666;line-height:1.55;margin-top:12px}footer{margin-top:25px;border-top:1px solid #111;padding-top:11px;font-size:11px;color:#666}.offsite .local-only{display:none}.offsite .actions{margin-top:12px}
+@media(max-width:760px){main{margin:0;padding:25px 20px}h1{font-size:29px}.areas{grid-template-columns:1fr}.contexts{grid-template-columns:1fr 1fr}.names th:first-child{width:34%}.changes th:first-child{width:30%}.changes th:nth-child(2){width:23%}td,th{padding:10px 9px}.actions{flex-wrap:wrap;gap:14px}}
+@media(max-width:430px){.groups{gap:18px 16px}.contexts{gap:16px}body{font-size:13px}table{font-size:12px}.changes th:nth-child(2){width:24%}}
+@media print{@page{size:A4;margin:14mm}body{background:#fff;font-size:11px}main{margin:0;max-width:none;padding:0}h1{font-size:27px}h2{font-size:17px}header{margin-bottom:18px;padding-bottom:17px}.actions{display:none}section{margin-top:21px}.areas{gap:14px}.area-body{padding:12px}.groups{gap:13px}.contexts{gap:12px;padding:13px 0}.contexts p{font-size:10px}table{font-size:11px}th{font-size:10px}th,td{padding:8px 10px}tr,.area,.contexts{break-inside:avoid}h2,h3{break-after:avoid}thead{display:table-header-group}a{color:#111}footer{margin-top:18px}.global{font-size:10px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="wordmark">ELLAVOX</div>
+<h1>Ellaworks navigation proposal</h1>
+<p>October 20, 2026</p>
+<div class="actions"><a class="local-only" href="./#work/teams">Open prototype</a><a class="local-only" href="./ellaworks-navigation-review.html" download="ellaworks-navigation-review.html">Download shareable HTML</a><button type="button" onclick="window.print()">Print / save as PDF</button></div>
+</header>
+<section aria-labelledby="structure">
+<h2 id="structure">1. Proposed structure</h2>
+<div class="areas">
+<div class="area"><h3>Work area: Agents &amp; Teams</h3><div class="area-body">
+<div class="primary-destination">Workers &amp; teams</div>
+<div class="groups">
+<div><h4>Provider management</h4><ul><li>Agents</li><li>Groups</li><li>Deployments</li></ul></div>
+<div><h4>Testing</h4><ul><li>Playground</li><li>Judge Studio</li></ul></div>
+<div><h4>Monitoring</h4><ul><li>Statistics</li><li>Logs</li></ul></div>
+<div><h4>Configuration</h4><ul><li>Environments</li><li>Secrets</li><li>Variables</li><li>Guardrails</li></ul></div>
+</div></div></div>
+<div class="area"><h3>Work area: Library</h3><div class="area-body"><ul class="library-list"><li>Prompts</li><li>Promptlets</li><li>Knowledge bases</li><li>Tools</li><li>Registries</li><li>Prompt policies</li></ul></div></div>
+</div>
+<div class="global"><strong>Global navigation:</strong> organization chooser at top; Elladex above the bottom-left work-area switcher; account and organization settings at bottom. The switcher changes the sidebar between the two work areas.</div>
+<div class="contexts">
+<div><h3>Open a team</h3><p>Inbox · Task Board · Activity · Settings<br>Settings: Team settings, Policies, Exchange, Connections</p></div>
+<div><h3>Open a provider agent</h3><p>Overview · Tools · Knowledge · Deployment history</p></div>
+<div><h3>Open an agent group</h3><p>Agents first, then Shared settings: default configuration and group variables</p></div>
+<div><h3>Open a worker</h3><p>Overview · Knowledge · Activity · Settings<br>Individual worker workspace is a new view.</p></div>
+</div>
+</section>
+<section aria-labelledby="names">
+<h2 id="names">2. Name changes</h2>
+<div class="table-wrap"><table class="names"><thead><tr><th>Existing site</th><th>Prototype</th></tr></thead><tbody>
+<tr><td>Agentic Teams</td><td><strong>Workers &amp; teams</strong><small>The directory also includes individual workers; this is an expanded view.</small></td></tr>
+<tr><td>Agents</td><td><strong>Agents</strong> in the sidebar · <strong>Provider agents</strong> as the page title</td></tr>
+<tr><td>Fleets</td><td><strong>Groups</strong> in the sidebar · <strong>Agent groups</strong> as the page title</td></tr>
+<tr><td>Deployments</td><td><strong>Deployments</strong> in the sidebar · <strong>Deployment history</strong> as the page title</td></tr>
+<tr><td>Observability</td><td><strong>Monitoring</strong></td></tr>
+<tr><td>Elladex Search</td><td><strong>Elladex</strong> · “Discover and submit agents”</td></tr>
+</tbody></table></div>
+<p class="note">Provider management, Testing, Configuration and the Library work area are new navigation groupings of existing pages.</p>
+</section>
+<section aria-labelledby="views">
+<h2 id="views">3. New and expanded views</h2>
+<div class="table-wrap"><table class="changes"><thead><tr><th>View</th><th>Change</th><th>Compared with the existing site</th></tr></thead><tbody>
+<tr><td><strong>Work-area navigation</strong></td><td>New interface</td><td>Bottom-left switcher, contextual sidebar and return to the originating view from Library.</td></tr>
+<tr><td><strong>Workers &amp; teams directory</strong></td><td>Expanded</td><td>Adds individual workers alongside the existing team list.</td></tr>
+<tr><td><strong>Add worker or team</strong></td><td>New screen</td><td>Choose Hire a worker or Create a team; the team branch retains the existing Create team form.</td></tr>
+<tr><td><strong>Hire a worker</strong></td><td>New flow</td><td>Conversation and editable job description → knowledge → onboarding clarification → review → answer-and-source testing → save.</td></tr>
+<tr><td><strong>Individual worker workspace</strong></td><td>New view</td><td>A focused place to review one worker’s job description, knowledge, readiness and settings.</td></tr>
+</tbody></table></div>
+<p class="note">New and expanded views are proposals for review.</p>
+</section>
+<footer>Structure matches the current local prototype. Comparison is based on inspected app screens and the supplied product handoff; hidden and role-specific pages still need confirmation.</footer>
+</main>
+<script>if(location.protocol==='file:'){document.documentElement.classList.add('offsite')}</script>
+</body>
+</html>
