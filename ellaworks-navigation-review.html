@@ -9,6 +9,7 @@
 @media(max-width:760px){main{margin:0;padding:25px 20px}h1{font-size:29px}.areas{grid-template-columns:1fr}.contexts{grid-template-columns:1fr 1fr}.names th:first-child{width:34%}.changes th:first-child{width:30%}.changes th:nth-child(2){width:23%}td,th{padding:10px 9px}.actions{flex-wrap:wrap;gap:14px}}
 @media(max-width:430px){.groups{gap:18px 16px}.contexts{gap:16px}body{font-size:13px}table{font-size:12px}.changes th:nth-child(2){width:24%}}
 @media print{@page{size:A4;margin:14mm}body{background:#fff;font-size:11px}main{margin:0;max-width:none;padding:0}h1{font-size:27px}h2{font-size:17px}header{margin-bottom:18px;padding-bottom:17px}.actions{display:none}section{margin-top:21px}.areas{gap:14px}.area-body{padding:12px}.groups{gap:13px}.contexts{gap:12px;padding:13px 0}.contexts p{font-size:10px}table{font-size:11px}th{font-size:10px}th,td{padding:8px 10px}tr,.area,.contexts{break-inside:avoid}h2,h3{break-after:avoid}thead{display:table-header-group}a{color:#111}footer{margin-top:18px}.global{font-size:10px}}
+.solo-destination{border-top:1px solid #ddd;margin-top:18px;padding-top:14px;display:flex;align-items:baseline;gap:16px}.solo-destination>a{font-weight:700}.solo-destination>span{color:#666;font-size:12px}
 </style>
 </head>
 <body>
@@ -25,13 +26,13 @@
 <div class="area"><h3>Work area: Agents &amp; Teams</h3><div class="area-body">
 <div class="groups">
 <div><h4>Build</h4><ul><li><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/v2/#work/agents">Agents</a></li><li><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/v2/#work/teams">Teams</a></li></ul></div>
-<div><h4>Configuration</h4><ul><li>Environments</li><li>Secrets</li><li>Variables</li><li><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/v2/#work/guardrails">Guardrails</a></li></ul></div>
-<div><h4>Testing</h4><ul><li>Playground</li></ul></div>
-<div><h4>Monitoring</h4><ul><li>Logs</li><li>Usage</li><li>Deployment history</li></ul></div>
-</div></div></div>
+<div><h4>Configure</h4><ul><li>Environments</li><li>Secrets</li><li>Variables</li><li><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/v2/#work/guardrails">Guardrails</a></li></ul></div>
+<div><h4>Test</h4><ul><li>Playground</li></ul></div>
+<div><h4>Monitor</h4><ul><li>Logs</li><li>Usage</li></ul></div>
+</div><div class="solo-destination"><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/v2/#work/deployments">Deploy</a><span>Deployment history and approvals</span></div></div></div>
 <div class="area"><h3>Work area: Library</h3><div class="area-body"><ul class="library-list"><li><a href="https://mattkimmell.github.io/ellaworks-navigation-prototype/v2/#library/prompts">Prompts</a></li><li>Promptlets</li><li>Knowledge bases</li><li>Tools</li><li>Registries</li><li>Prompt policies</li></ul></div></div>
 </div>
-<div class="global"><strong>How navigation works:</strong> the bottom-left switcher changes work area and sidebar. Sidebar headings stay visible; page tabs sit below the selected item’s title. Elladex stays above the switcher with “Discover and submit agents”; organization and account controls stay outside the page list.</div>
+<div class="global"><strong>How navigation works:</strong> the bottom-left switcher changes work area and sidebar. Build, Configure, Test and Monitor are fixed headings; Deploy is a standalone link. Page tabs sit below the selected item’s title. Elladex stays above the switcher with “Discover and submit agents”; organization and account controls stay outside the page list.</div>
 <div class="contexts">
 <div><h3>Ellaworks agent</h3><p>Overview · Knowledge · Activity · Settings<br>Job description, onboarding and source testing.</p></div>
 <div><h3>Provider-hosted agent</h3><p>Overview · Tools · Knowledge · Deployment history<br>Provider configuration and operational controls.</p></div>
@@ -46,10 +47,10 @@
 <tr><td>Agents</td><td><strong>Agents</strong> under Build; now includes Ellaworks and provider-hosted agents.<small>V1’s separate “worker” label and Provider management section are removed from the main navigation.</small></td></tr>
 <tr><td>Agentic Teams</td><td><strong>Teams</strong> under Build; separate from Agents.</td></tr>
 <tr><td>Fleets</td><td><strong>Shared group settings</strong>, reached from the Agents directory and assigned agent details.<small>No Groups sidebar item. Tags organize agents; they do not replace shared defaults or variables. Final disposition remains open.</small></td></tr>
-<tr><td>Observability</td><td><strong>Monitoring</strong></td></tr>
-<tr><td>Statistics</td><td><strong>Usage</strong> under Monitoring</td></tr>
-<tr><td>Deployments</td><td><strong>Deployment history</strong> under Monitoring</td></tr>
-<tr><td>Judge Studio</td><td><strong>Guardrails → Design &amp; test</strong>, under Configuration<small>Confirm that Judge Studio’s full scope fits this placement.</small></td></tr>
+<tr><td>Observability</td><td><strong>Monitor</strong></td></tr>
+<tr><td>Statistics</td><td><strong>Usage</strong> under Monitor</td></tr>
+<tr><td>Deployments</td><td><strong>Deploy</strong> as a standalone sidebar item</td></tr>
+<tr><td>Judge Studio</td><td><strong>Guardrails → Design &amp; test</strong>, under Configure<small>Confirm that Judge Studio’s full scope fits this placement.</small></td></tr>
 <tr><td>Elladex Search</td><td><strong>Elladex</strong> · “Discover and submit agents”</td></tr>
 </tbody></table></div>
 </section>
